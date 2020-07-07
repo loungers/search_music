@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试页</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/backsucai.css" charset="utf-8">
+    <link rel="shortcut icon" href="/static/icon/logo2-t.ico" type="image/x-icon"/>
+    <style type="text/css">h0{font-size: 28px}</style>
+</head>
+<body class="theme theme_font_neoskeuo theme_space_neoskeuo theme_color_neoskeuo">
+    <!--首页logo-->
+    <img src="/static/logo/logo2-t.png" width="220px" ; height="170px" ; style="position:absolute; left:10px; top:10px; ">
+    <div>
+        <!--上方按钮模块绝对（absolute）定位-->
+        <section class="decorator decorator_indent-b_3xl" style="position:absolute; left:550px; top:25px; ">
+            <!--对上方按钮底部模块高度大小进行限制-->
+            <div class="choice-group decorator_indent-r_xl" style="height: 125px" >
+                <!--对按钮1的宽度进行限制-->
+                <label for="CG-radio-1" class="choice-group__item" style="width:125px">
+                    <input type="radio" id="CG-radio-1" name="choice-group" class="choice-group__input">
+                    <!--对按钮1的高度进行限制-->
+                    <div type="button" class="choice-group__button" style="height: 125px"><h0><b>歌 曲<br>查 询</b></h0></div>
+                </label>
+                <!--对按钮2的宽度进行限制-->
+                <label for="CG-radio-2" class="choice-group__item" style="width: 125px">
+                    <input checked type="radio" id="CG-radio-2" name="choice-group" class="choice-group__input">
+                    <!--对按钮2的高度进行限制-->
+                    <div type="button" class="choice-group__button" style="height: 125px"><h0><b>热 门<br>推 荐</b></h0></div>
+                </label>
+                <!--对按钮3的宽度进行限制-->
+                <label for="CG-radio-3" class="choice-group__item" style="width: 125px">
+                    <input type="radio" id="CG-radio-3" name="choice-group" class="choice-group__input">
+                    <!--对按钮3的高度进行限制-->
+                    <div type="button" class="choice-group__button" style="height: 125px;"><h0><b>我 的<br>音 乐</b></h0></div>
+                </label>
+                <!--添加搜索框，长度尺寸设置为30-->
+                <input type="search" class="input decorator decorator_indent-b_xl" style="position: relative;top: 28px" placeholder="请输入歌曲歌手名..." size="30" />
+                <!--添加搜索框中的放大镜图标，通过绝对定位覆盖，通过对图片的高度进行限制来缩小图片分辨率-->
+                <img style="width: 35px;position: absolute;left:695px;top: 43px;" src="/static/image/search.png" />
+            </div>
+
+            <!--登录按钮-->
+            <button class="button">
+                登陆
+            </button>
+            <!--注册按钮-->
+            <button class="button">
+                注册
+            </button>
+
+
+        </section>
+    </div>
+
+</body>
+</html>

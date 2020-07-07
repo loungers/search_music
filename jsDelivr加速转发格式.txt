@@ -1,0 +1,4 @@
+https://cdn.jsdelivr.net/gh/用户名称/仓库名称@版本号/目录
+https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/
+https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/
+https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/2houtui.png

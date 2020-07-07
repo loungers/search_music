@@ -1,13 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
 <HEAD>
+    <meta charset="UTF-8">
     <TITLE>享听在线音乐</TITLE>
     <META NAME="Generator" CONTENT="EditPlus">
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
     <META NAME="Description" CONTENT="">
     <base href="http://127.0.0.1:8000/" />
-    <script src="/static/js/jquery-1.8.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/js/jquery-1.8.3.min.js"></script>
     <!--请自行放置音频文件-->
     <style>
         * {
@@ -106,13 +107,13 @@
 <div class="myaudio">
     <div class="myaudio-center">
         <audio id="aud">
-            <source src='/static/songFile/bg.mp3' type='audio/ogg' width='300px'>
-            <source src='/static/songFile/bg.mp3' type='audio/mpeg' width='300px'>
-            <source src='/static/songFile/bg.mp3' type='audio/wav' width='300px'>
+            <source src='https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/songFile/bg.mp3' type='audio/ogg' width='300px'>
+            <source src='https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/songFile/bg.mp3' type='audio/mpeg' width='300px'>
+            <source src='https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/songFile/bg.mp3' type='audio/wav' width='300px'>
             浏览器不支持此格式
         </audio>
         <div class="aud-btn">
-            <img src="/static/image/play.png" id="play"/>
+            <img src="https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/play.png" id="play"/>
         </div>
         <div class="aud-show">
             <div id="Progress-time">00:00</div>
@@ -138,10 +139,10 @@
     $('#play').click(function () {
         i++;
         if (i % 2 != 0) {
-            $(this).attr('src', '/static/image/pause.png');
+            $(this).attr('src', 'https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/pause.png');
             aud_play();
         } else {
-            $(this).attr('src', '/static/image/play.png');
+            $(this).attr('src', 'https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/play.png');
             aud_pause()
         }
     })
@@ -228,7 +229,7 @@
             });
             $('#jin').width($(this).width() + moveX + sX - startX);
             var w = audio.duration.toFixed(2) * ($('#jin').width() / winW)
-            $('#play').attr('src', '/static/image/pause.png');
+            $('#play').attr('src', 'https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/pause.png');
             aud_play(w)
         },
         mousedown: function (ev) {
@@ -255,7 +256,7 @@
                 $(this).css({left: l})
                 $('#jin').width($(this).width() + l);
                 var w = audio.duration.toFixed(2) * ($('#jin').width() / winW)
-                $('#play').attr('src', '/static/image/pause.png');
+                $('#play').attr('src', 'https://cdn.jsdelivr.net/gh/loungers/search_music@1.0/static/image/pause.png');
                 aud_play(w)
             });
             $(this).mouseup(function () {
